@@ -4,8 +4,16 @@
   "description": "REST API APP with MONGOOSE, EXPRESS & NODE",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Chuks Agbakuru",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
