@@ -1,0 +1,11 @@
+{
+  "name": "rest-api-node-express-mongoose",
+  "version": "1.0.0",
+  "description": "REST API APP with MONGOOSE, EXPRESS & NODE",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chuks Agbakuru",
+  "license": "MIT"
+}
