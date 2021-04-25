@@ -14,9 +14,8 @@ const validateItem = item => {
 
 router.get('/', (req, res) => {
     return Item.find().sort({date: -1})
-    .then(items => {
-        res.status(200).send(items);
-    }).catch(err => res.status(500).send(err))
+    .then(items => res.status(200).send(items))
+    .catch(err => res.status(500).send(err))
 })
 
 router.get('/:id', (req, res) => {
@@ -27,9 +26,7 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
     const { error } = validateItem(req.body)
-    if(error) {
-        return res.status(400).send(error.details);
-    }
+    if(error) return res.status(400).send(error.details);
 
     const newItem = new Item({
         name: req.body.name
