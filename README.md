@@ -5,8 +5,8 @@ This is a template I developed to get started with REST-API development projects
 - [x] Install Express and Setup App
 - [x] Setup Item Routes
 - [x] Setup DB and Item Model
-- [] Add Data Validation
-- [] Add Authentication and API Authorization using JWT
+- [ ] Add Data Validation
+- [ ] Add Authentication and API Authorization using JWT
 
 Feel free to fork/clone.
 
