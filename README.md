@@ -16,7 +16,8 @@ Instructions
 
 ```
 npm install
-'''
+
+```
 
 3. Create a config folder in your root directory and a file under config named keys.js. Inside keys.js, export an object with a key "mongoURI"; value should be the endpoint to your mongoDB instance, either on MongoDB Atlas or locally". For example
 
