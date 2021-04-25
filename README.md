@@ -1,4 +1,14 @@
-This is a template I developed to get started with REST-API development projects. Feel free to fork/clone.
+This is a template I developed to get started with REST-API development projects.
+
+### ToDo
+
+[x] Install Express and Setup App
+[x] Setup Item Routes
+[x] Setup DB and Item Model
+[] Add Data Validation
+[] Add Authentication and API Authorization using JWT
+
+Feel free to fork/clone.
 
 ### Technologies Used
 
@@ -29,27 +39,27 @@ Note that this is only for development purposes. In production, this value shoul
 
 #### Endpoints are:
 
-##### @route GET api/items
-##### @desc GET items
+***@route GET api/items\
+@desc GET items***
 
 http://localhost:{port_number}/api/items
 
 
 
-##### @route POST api/items
-##### @desc Add new item. Pass new item name in request body
+@route POST api/items
+@desc Add new item. Pass new item name in request body
 
 http://localhost:{port_number}/api/items
 
 
-##### @route PUT api/items/:id
-##### @desc Update existing item. Pass ID of item to update as a request parameter
+@route PUT api/items/:id
+@desc Update existing item. Pass ID of item to update as a request parameter
 
 http://localhost:{port_number}/api/items/{item_id}
 
 
-##### @route DELETE api/items/:id
-##### @desc Delete existing item. Pass ID of item to delete as a request parameter
+@route DELETE api/items/:id
+@desc Delete existing item. Pass ID of item to delete as a request parameter
 
 http://localhost:{port_number}/api/items/{item_id}
 
