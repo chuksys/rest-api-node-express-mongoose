@@ -27,29 +27,29 @@ Note that this is only for development purposes. In production, this value shoul
 
 4. At this point, the API endpoints should work. Simply use postman to test these endpoints. 
 
-##### Endpoints are:
+#### Endpoints are:
 
-**@route GET api/items**
-**@desc GET items**
-
-http://localhost:{port_number}/api/items
-
-
-
-**@route POST api/items**
-**@desc Add new item. Pass new item name in request body**
+##### @route GET api/items
+##### @desc GET items
 
 http://localhost:{port_number}/api/items
 
 
-** @route PUT api/items/:id **
-** @desc Update existing item. Pass ID of item to update as a request parameter **
+
+##### @route POST api/items
+##### @desc Add new item. Pass new item name in request body
+
+http://localhost:{port_number}/api/items
+
+
+##### @route PUT api/items/:id
+##### @desc Update existing item. Pass ID of item to update as a request parameter
 
 http://localhost:{port_number}/api/items/{item_id}
 
 
-** @route DELETE api/items/:id **
-** @desc Delete existing item. Pass ID of item to delete as a request parameter **
+##### @route DELETE api/items/:id
+##### @desc Delete existing item. Pass ID of item to delete as a request parameter
 
 http://localhost:{port_number}/api/items/{item_id}
 
