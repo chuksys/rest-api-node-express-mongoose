@@ -14,9 +14,8 @@ const validateItem = item => {
 
 router.get('/', (req, res) => {
     return Item.find().sort({date: -1})
-    .then(items => {
-        res.status(200).send(items);
-    }).catch(err => res.status(500).send(err))
+    .then(items => res.status(200).send(items))
+    .catch(err => res.status(500).send(err))
 })
 
 router.get('/:id', (req, res) => {
