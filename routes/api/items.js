@@ -38,11 +38,15 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
     const { error } = validateItem(req.body)
-    if(error) res.status(400).send(error)
+
+    if(error) {
+        res.status(400).send(error)
+        throw new Error(error)  
+    }
 
     return Item.findByIdAndUpdate(req.params.id, {
         name: req.body.name
-    }, {new: true})
+    }, {new: true, useFindAndModify: false})
         .then(item => res.status(201).send(item)
         .catch(err => res.status(404).send("Resource not found")))
 })
