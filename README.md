@@ -1,4 +1,4 @@
-This is a template I developed to get started with REST-API development projects.
+Boilerplate for getting started with REST-API development projects using Node, Express & MongoDB.
 
 ### ToDo
 
