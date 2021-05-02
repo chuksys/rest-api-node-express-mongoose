@@ -26,14 +26,14 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
     const { error } = validateItem(req.body)
-    if(error) return res.status(400).send(error.details);
+    if(error) return res.status(400).setHeader('Content-Type', 'application/json').send(error.details);
 
     const newItem = new Item({
         name: req.body.name
     })
     return newItem.save()
-    .then(item => res.status(201).send(item))
-    .catch(err => res.status(500).send(err))
+    .then(item => res.status(201).setHeader('Content-Type', 'application/json').send(item))
+    .catch(err => res.status(500).setHeader('Content-Type', 'application/json').send(err))
 })
 
 router.put('/:id', (req, res) => {

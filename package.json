@@ -2,19 +2,25 @@
   "name": "rest-api-node-express-mongoose",
   "version": "1.0.0",
   "description": "REST API APP with MONGOOSE, EXPRESS & NODE",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "SET NODE_ENV=dev && nodemon server.js",
+    "test": "mocha --recursive --timeout 12000 --exit"
   },
   "author": "Chuks Agbakuru",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "joi": "^17.4.0",
-    "mongoose": "^5.12.5"
+    "mongoose": "^5.12.5",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2",
+    "mockgoose": "^8.0.4",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   }
 }
