@@ -6,6 +6,7 @@ Boilerplate for getting started with REST-API development projects using Node, E
 - [x] Setup Item Routes
 - [x] Setup DB and Item Model
 - [x] Add Data Validation
+- [x] Add Automated Tests (Mocha, Chai, Chai-http)
 - [ ] Add Authentication and API Authorization using JWT
 
 Feel free to fork/clone.
@@ -16,6 +17,7 @@ Feel free to fork/clone.
 2. ORM: Mongoose
 3. Runtime: NODE
 4. Framework: Express
+5. Testing: Mocha, Chai, Chai-http
 
 ### Instructions
 
