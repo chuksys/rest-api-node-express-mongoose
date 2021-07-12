@@ -38,7 +38,12 @@ module.exports = {
 ```
 Note that this is only for development purposes. In production, this value should be an environment variable.
 
-4. At this point, the API endpoints should work. Simply use postman to test these endpoints. 
+4. Run 
+
+```
+npm start
+```
+At this point, the API endpoints should work. Simply use postman to test these endpoints. 
 
 ***@route GET api/items\
 @desc GET items***
@@ -63,6 +68,12 @@ http://localhost:{port_number}/api/items/{item_id}
 @desc Delete existing item. Pass ID of item to delete as a request parameter***
 
 http://localhost:{port_number}/api/items/{item_id}
+
+5. To run the automated tests, Run
+
+```
+npm test
+```
 
 
 
