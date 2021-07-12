@@ -29,11 +29,11 @@ Feel free to fork/clone.
 npm install
 ```
 
-3. Create a config folder in your root directory and a file under config named keys.js. Inside keys.js, export an object with a key "mongoURI"; value should be the endpoint to your mongoDB instance, either on MongoDB Atlas or locally". For example
+3. Create a config folder in your root directory and a file under config named keys.js. Inside keys.js, export an object with two keys "mongoDevURI" and "mongoTestURI"; values should be the endpoint to your mongoDB instances (for both development and testing), either on MongoDB Atlas or locally". For example
 
 ```
 module.exports = {
-    mongoURI: encodeURI('mongodb+srv://username:password@*******************')
+    mongoDevURI: encodeURI('mongodb+srv://username:password@*******************')
 }
 ```
 Note that this is only for development purposes. In production, this value should be an environment variable.
