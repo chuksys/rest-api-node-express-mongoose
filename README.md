@@ -8,6 +8,7 @@ Boilerplate for getting started with REST-API development projects using Node, E
 - [x] Add Data Validation
 - [x] Add Automated Tests (Mocha, Chai, Chai-http)
 - [ ] Add Authentication and API Authorization using JWT
+- [ ] Add handlers to take care of business logic currently in routes
 
 Feel free to fork/clone.
 
